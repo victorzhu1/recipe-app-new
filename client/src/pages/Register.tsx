@@ -23,7 +23,7 @@ export function Register() {
     const [registerError, setRegisterError] = useState("");
 
     const onSubmitA = (data: User) => {
-        axios.post(`${apiUrl}/auth/login`, data)
+        axios.post(`${apiUrl}/auth/`, data)
             .then((response) => {
                 navigate("/");
             })
